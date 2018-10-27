@@ -1,56 +1,37 @@
-<!DOCTYPE html>
-<html>
+## Welcome to GitHub Pages
 
-	<head>
-		<meta charset="utf-8">
-	
+You can use the [editor on GitHub](https://github.com/ltu20181231/chart/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
+Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-		<title>Display Webcam Stream</title>
-		<style>
-			#container{
-				margin : 0px auto;
-				width : 500px;
-				height : 375px;
-				border : 10px #333 solid;
-			}
-			#videoElement{
-				width : 500px;
-				height : 375px;
-				background-color : #666;
-			}
-	
-		</style>
-	</head>
+### Markdown
 
-	<body>
-		
-		<div id="container">
-			<video autoplay="true" id="videoElement"></video>
-		</div>
-	
-		
-		<script>
+Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-	
-		//攝影機程式碼
+```markdown
+Syntax highlighted code block
 
-			var video = document.querySelector("#videoElement");
-			if(navigator.mediaDevices.getUserMedia){
-				navigator.mediaDevices.getUserMedia({video: true})
-				.then(function(stream){
-					video.srcObject = stream;
-					video.play();
-				})
-				.catch(function(e){
-					console.log("Error");
-				});
-			}			
+# Header 1
+## Header 2
+### Header 3
 
+- Bulleted
+- List
 
+1. Numbered
+2. List
 
+**Bold** and _Italic_ and `Code` text
 
-	</script>
-	</body>
+[Link](url) and ![Image](src)
+```
 
-</html>
+For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+
+### Jekyll Themes
+
+Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ltu20181231/chart/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+
+### Support or Contact
+
+Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
